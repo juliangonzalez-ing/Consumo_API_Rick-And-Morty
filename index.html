@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <title>Api Ricky y Morty!!</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Rick And Morty API</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Personajes <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="Episodios()">Episodios</a>
+                    </li>
+                        </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Busqueda por Nombre" aria-label="Search" id="parametro_busqueda">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="busqueda()">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <h1>Bienvenido, aca estoy consumiendo la API de rick and morty</h1>
+        <div class="row" id="contenido_API">
+        </div>
+
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center pagination-lg">
+                <li class="page-item"><a class="page-link" onclick="PaginaDown()">Previous</a></li>
+                <li class="page-item"><a class="page-link" onclick="pagina_API(1)">1</a></li>
+                <li class="page-item"><a class="page-link" onclick="pagina_API(2)">2</a></li>
+                <li class="page-item"><a class="page-link" onclick="pagina_API(3)">3</a></li>
+                <li class="page-item"><a class="page-link" onclick="PaginaUP()" >Next</a></li>
+            </ul>
+        </nav>
+
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-one mt-2">
+                            <h3><i class="fas fa-angle-right"></i> Sobre Nosotros</h3>
+                            <p class="parrafos-footer">
+                            <ul>
+                                <li> Santa Marta, Colombia</li>
+                                <li> Telefono: (031) 886 00 00</li>
+                                <li><a href="../html/contact.html"
+                                        target="_blank">Contactenos</a> </li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-two mt-2">
+                            <h3 class="titulo3-footer"> <i class="fas fa-angle-right"></i> Servicios</h3>
+                            <ul>
+                                <li><a href="#"></a> N/A</li>
+                                <li><a href="#"></a> N/A</li>
+                                <li><a href="#"></a> N/A</li>
+                                <li><a href="#"></a>N/A</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-three mt-2">
+                            <h2> Siguenos</h2>
+                            <p class="parrafos-footer">En nuestras Redes Sociales </p>
+<!--                             <a href="https://www.facebook.com/" target="_blank"><i
+                                    class="fab fa-facebook fa-lg"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+ -->                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-four mt-2">
+                            <h2 class="titulo2-footer"> Suscribete</h2>
+                            <p class="parrafos-footer">Para obtener Noticias, Ofertas e información relevante de nuestro
+                                Hotel
+                                ingrese su correo!.
+                            </p>
+                            <div class="row">
+                                <div class="col-11">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">@</span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Ingresa tu email"
+                                            aria-label="Username" aria-describedby="basic-addon1" id="email_boletin">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-sm btn-info col-11" onclick="boletin()">Sucribirme</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer-bottom-text text-center"> &copy;  Bictia-Colsubsidio
+                2021
+            </p>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/code.js"></script>
+</body>
+
+</html>
